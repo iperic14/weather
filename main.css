@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
     font-size: 40px;
     margin-top: 20px;
+    color: #000000ad;
 }
 
 .wrap {
@@ -54,7 +56,6 @@ button:hover {
 }
 
 .results div {
-    /* background: white; */
     width: 160px;
     height: 50px;
     line-height: 50px;
@@ -66,4 +67,15 @@ button:hover {
 .results h1 {
     margin-bottom: 20px;
     font-size: 3rem;
+}
+
+.fade-in {
+    animation: fly-in 0.6s ease-in forwards;
+}
+
+@keyframes fly-in {
+    from {opacity: 0;}
+    to {
+        opacity: 1;
+    }
 }

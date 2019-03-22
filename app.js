@@ -4,6 +4,7 @@ let results = document.querySelector('.results');
     
 
 btn.addEventListener('click', () => {
+    results.classList.remove('fade-in');
     let inp = city.value;
     if (inp !== '') {
         let proxy = "https://cors-anywhere.herokuapp.com/";
@@ -25,8 +26,7 @@ btn.addEventListener('click', () => {
             results.appendChild(temp);
             results.appendChild(wind);
             results.appendChild(press);
-            console.log(data);
+            results.classList.add('fade-in');
         })
     }
-    
 })
